@@ -1,0 +1,1443 @@
+[
+    {
+        "id": "f9847971b187432a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ef295b838fa54079",
+        "type": "tab",
+        "label": "H P Condition insert Tata",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f1a2c3d4e5f6a7b8",
+        "type": "tab",
+        "label": "Simple DataTable UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "77b8f05fc0c712f8",
+        "type": "tab",
+        "label": "H P Insert Update",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d56e9038cfc4ecfb",
+        "type": "tab",
+        "label": "Intruption_collision_spot",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fed8110cd3127186",
+        "type": "MSSQL-CN",
+        "z": "f9847971b187432a",
+        "tdsVersion": "7_4",
+        "name": "my connection",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "Practise",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": true,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "6b8722d1c880543d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.63",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e33c94527eeba907",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "88957c7941099ca5",
+        "type": "mqtt-broker",
+        "name": "subscriber",
+        "broker": "192.168.1.63",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8fbc5ff67dc3b56f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.64",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "118eea4b.0de5ae",
+        "type": "mqtt-broker",
+        "name": "Local MQTT Broker",
+        "broker": "192.168.1.63",
+        "port": "1883",
+        "clientid": "nodered-client",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1fa281188193aaab",
+        "type": "s7 endpoint",
+        "z": "ef295b838fa54079",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "1000",
+        "timeout": 2000,
+        "name": "PLC",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "01_LH"
+            },
+            {
+                "addr": "DB100,X0.1",
+                "name": "02_LH"
+            },
+            {
+                "addr": "DB100,X0.2",
+                "name": "03_LH"
+            },
+            {
+                "addr": "DB100,X0.3",
+                "name": "04_LH"
+            },
+            {
+                "addr": "DB100,X0.4",
+                "name": "05_LH"
+            },
+            {
+                "addr": "DB100,X0.5",
+                "name": "06_LH"
+            },
+            {
+                "addr": "DB100,X0.6",
+                "name": "07_LH"
+            },
+            {
+                "addr": "DB100,X0.7",
+                "name": "08_LH"
+            },
+            {
+                "addr": "DB100,X1.0",
+                "name": "11_LH"
+            },
+            {
+                "addr": "DB100,X1.1",
+                "name": "12_LH"
+            },
+            {
+                "addr": "DB100,X1.2",
+                "name": "13_LH"
+            },
+            {
+                "addr": "DB100,X1.3",
+                "name": "14_LH"
+            },
+            {
+                "addr": "DB100,X1.4",
+                "name": "15_LH"
+            },
+            {
+                "addr": "DB100,X1.5",
+                "name": "16_LH"
+            },
+            {
+                "addr": "DB100,X1.6",
+                "name": "17_LH"
+            },
+            {
+                "addr": "DB100,X1.7",
+                "name": "18_LH"
+            },
+            {
+                "addr": "DB100,X2.0",
+                "name": "19_LH"
+            },
+            {
+                "addr": "DB100,X2.1",
+                "name": "20_LH"
+            }
+        ]
+    },
+    {
+        "id": "b3b5067bddac923a",
+        "type": "MSSQL-CN",
+        "z": "ef295b838fa54079",
+        "tdsVersion": "7_4",
+        "name": "MSSQL",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "09d90d0ccd360665",
+        "type": "s7 endpoint",
+        "z": "ef295b838fa54079",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": []
+    },
+    {
+        "id": "8beb0a19942bd3b9",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "PLC_ShiftMonitor",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "SHIFT_A"
+            },
+            {
+                "addr": "DB100,X0.1",
+                "name": "SHIFT_B"
+            },
+            {
+                "addr": "DB100,X0.2",
+                "name": "SHIFT_C"
+            }
+        ]
+    },
+    {
+        "id": "bd9422607a27feeb",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "PLC_ShiftTags",
+        "vartable": []
+    },
+    {
+        "id": "s7plc",
+        "type": "s7 endpoint",
+        "z": "77b8f05fc0c712f8",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "PLC",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "01_LH"
+            },
+            {
+                "addr": "DB100,X0.1",
+                "name": "02_LH"
+            },
+            {
+                "addr": "DB100,X0.2",
+                "name": "03_LH"
+            },
+            {
+                "addr": "DB100,X0.3",
+                "name": "04_LH"
+            },
+            {
+                "addr": "DB100,X0.4",
+                "name": "05_LH"
+            },
+            {
+                "addr": "DB100,X0.5",
+                "name": "06_LH"
+            },
+            {
+                "addr": "DB100,X0.6",
+                "name": "07_LH"
+            },
+            {
+                "addr": "DB100,X0.7",
+                "name": "08_LH"
+            },
+            {
+                "addr": "DB100,X1.0",
+                "name": "11_LH"
+            },
+            {
+                "addr": "DB100,X1.1",
+                "name": "12_LH"
+            },
+            {
+                "addr": "DB100,X1.2",
+                "name": "13_LH"
+            },
+            {
+                "addr": "DB100,X1.3",
+                "name": "14_LH"
+            },
+            {
+                "addr": "DB100,X1.4",
+                "name": "15_LH"
+            },
+            {
+                "addr": "DB100,X1.5",
+                "name": "16_LH"
+            },
+            {
+                "addr": "DB100,X1.6",
+                "name": "17_LH"
+            },
+            {
+                "addr": "DB100,X1.7",
+                "name": "18_LH"
+            },
+            {
+                "addr": "DB100,X2.0",
+                "name": "19_LH"
+            },
+            {
+                "addr": "DB100,X2.1",
+                "name": "20_LH"
+            }
+        ]
+    },
+    {
+        "id": "4c86a18c2ad62df5",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "63c9e83fba7be730",
+        "type": "ui_group",
+        "z": "f1a2c3d4e5f6a7b8",
+        "name": "Data Table",
+        "tab": "4c86a18c2ad62df5",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0c75fe6ce090950c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "78afed567ef169d7",
+        "type": "MSSQL-CN",
+        "z": "77b8f05fc0c712f8",
+        "tdsVersion": "7_4",
+        "name": "Mssql Connection",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "c51548e2cfc4b964",
+        "type": "MSSQL-CN",
+        "z": "d56e9038cfc4ecfb",
+        "tdsVersion": "7_4",
+        "name": "",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "cab73a55475e776c",
+        "type": "s7 endpoint",
+        "z": "d56e9038cfc4ecfb",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "01_Collision"
+            },
+            {
+                "addr": "DB100,X0.2",
+                "name": "02_Collision"
+            },
+            {
+                "addr": "DB100,X0.3",
+                "name": "03_Collision"
+            },
+            {
+                "addr": "DB100,X0.4",
+                "name": "04_Collision"
+            },
+            {
+                "addr": "DB100,X0.5",
+                "name": "05_Collision"
+            },
+            {
+                "addr": "DB100,X0.6",
+                "name": "06_Collision"
+            },
+            {
+                "addr": "DB100,X0.7",
+                "name": "07_Collision"
+            },
+            {
+                "addr": "DB100,X1.0",
+                "name": "08_Collision"
+            },
+            {
+                "addr": "DB100,X1.1",
+                "name": "09_Collision"
+            },
+            {
+                "addr": "DB100,X1.2",
+                "name": "10_Collision"
+            },
+            {
+                "addr": "DB100,X1.3",
+                "name": "11_Collision"
+            },
+            {
+                "addr": "DB100,X1.4",
+                "name": "12_Collision"
+            },
+            {
+                "addr": "DB100,X1.5",
+                "name": "13_Collision"
+            },
+            {
+                "addr": "DB100,X1.6",
+                "name": "14_Collision"
+            },
+            {
+                "addr": "DB100,X1.7",
+                "name": "15_Collision"
+            },
+            {
+                "addr": "DB100,X2.0",
+                "name": "16_Collision"
+            },
+            {
+                "addr": "DB100,X2.1",
+                "name": "01_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.2",
+                "name": "02_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.3",
+                "name": "03_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.4",
+                "name": "04_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.5",
+                "name": "05_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.6",
+                "name": "06_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X2.7",
+                "name": "07_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.0",
+                "name": "08_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.1",
+                "name": "09_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.2",
+                "name": "10_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.3",
+                "name": "11_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.4",
+                "name": "12_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.4",
+                "name": "13_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.5",
+                "name": "14_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.6",
+                "name": "15_AtcIntruption"
+            },
+            {
+                "addr": "DB100,X3.7",
+                "name": "16_AtcIntruption"
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            },
+            {
+                "addr": "",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "id": "ac9a6eddc6c1adc3",
+        "type": "function",
+        "z": "f9847971b187432a",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "343a938a26e2e1bc"
+            ]
+        ]
+    },
+    {
+        "id": "1d845037120d09f9",
+        "type": "inject",
+        "z": "f9847971b187432a",
+        "name": "Sample S7 Payload",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"STRING\":\"Pump_01\",\"REAL\":23.5,\"DWORD\":12345,\"BOOL\":true}",
+        "payloadType": "json",
+        "x": 250,
+        "y": 80,
+        "wires": [
+            [
+                "78166a7a2221140a"
+            ]
+        ]
+    },
+    {
+        "id": "78166a7a2221140a",
+        "type": "function",
+        "z": "f9847971b187432a",
+        "name": "Build SP Query",
+        "func": "function formatDate(date) {\n    let year = date.getFullYear();\n    let month = String(date.getMonth() + 1).padStart(2, '0');\n    let day = String(date.getDate()).padStart(2, '0');\n    let hours = String(date.getHours()).padStart(2, '0');\n    let minutes = String(date.getMinutes()).padStart(2, '0');\n    let seconds = String(date.getSeconds()).padStart(2, '0');\n    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n}\n\nlet now = new Date();\nconst currentDate = formatDate(now);\n\nlet values = msg.payload;\n\nmsg.payload = \"InsertS7CommDataa\"; // Stored procedure name\nmsg.queryParams = [\n    { name: \"Name\",  value: values.STRING || \"Unknown\" },\n    { name: \"RealVal\", value: parseFloat(values.REAL) || 0 },\n    { name: \"DWordVal\", value: values.DWORD || 0 },\n    { name: \"BooleanVal\", value: values.BOOL ? 1 : 0 },\n    { name: \"Timestamp\",  value: currentDate }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "c97ec3c2f4e72ccd"
+            ]
+        ]
+    },
+    {
+        "id": "c97ec3c2f4e72ccd",
+        "type": "MSSQL",
+        "z": "f9847971b187432a",
+        "mssqlCN": "fed8110cd3127186",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 640,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "343a938a26e2e1bc",
+        "type": "file",
+        "z": "f9847971b187432a",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\Error.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "13e133f8e22bf283"
+            ]
+        ]
+    },
+    {
+        "id": "3d016b0c7d9b7d75",
+        "type": "catch",
+        "z": "f9847971b187432a",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "ac9a6eddc6c1adc3"
+            ]
+        ]
+    },
+    {
+        "id": "13e133f8e22bf283",
+        "type": "debug",
+        "z": "f9847971b187432a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c2885d855b79906c",
+        "type": "s7 in",
+        "z": "ef295b838fa54079",
+        "endpoint": "1fa281188193aaab",
+        "mode": "all",
+        "variable": "01",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "9cc48642a83eed37"
+            ]
+        ]
+    },
+    {
+        "id": "9cc48642a83eed37",
+        "type": "function",
+        "z": "ef295b838fa54079",
+        "name": "function 1",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    let currentDate = now.getFullYear() + '-' +\n        String(now.getMonth() + 1).padStart(2, '0') + '-' +\n        String(now.getDate()).padStart(2, '0') + ' ' +\n        String(now.getHours()).padStart(2, '0') + ':' +\n        String(now.getMinutes()).padStart(2, '0') + ':' +\n        String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n        \n        if (isInTimeWindow(c.name)) {\n          \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: currentDate }\n                ],\n                queryMode: \"execute\"\n            });\n        }\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n\n// Time window: -5 min to +15 min around each hour from tag\nfunction isInTimeWindow(tagName) {\n    let hour = parseInt(tagName.split('_')[0]);\n    if (isNaN(hour)) return false;\n\n    let now = new Date();\n    let target = new Date(now);\n    target.setHours(hour, 0, 0, 0);\n\n    let startWindow = new Date(target.getTime() - 5 * 60 * 1000);\n    let endWindow = new Date(target.getTime() + 15 * 60 * 1000);\n\n    return now >= startWindow && now <= endWindow;\n}\n",
+        "outputs": 1,
+        "timeout": "120",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "7ae987125ead576e"
+            ]
+        ]
+    },
+    {
+        "id": "7ae987125ead576e",
+        "type": "MSSQL",
+        "z": "ef295b838fa54079",
+        "mssqlCN": "b3b5067bddac923a",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "b8e9c6da884b8634"
+            ]
+        ]
+    },
+    {
+        "id": "d158d110f83c1503",
+        "type": "catch",
+        "z": "ef295b838fa54079",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "42a17cf95f5d6635"
+            ]
+        ]
+    },
+    {
+        "id": "42a17cf95f5d6635",
+        "type": "function",
+        "z": "ef295b838fa54079",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "cfdca5ab3f7eb990"
+            ]
+        ]
+    },
+    {
+        "id": "cfdca5ab3f7eb990",
+        "type": "file",
+        "z": "ef295b838fa54079",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\Error.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8e9c6da884b8634",
+        "type": "debug",
+        "z": "ef295b838fa54079",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a1b2c3d4e5f6g7h8",
+        "type": "inject",
+        "z": "f1a2c3d4e5f6a7b8",
+        "name": "Load Table Data",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "f7a5f2c3d8a4b6e1"
+            ]
+        ]
+    },
+    {
+        "id": "f7a5f2c3d8a4b6e1",
+        "type": "function",
+        "z": "f1a2c3d4e5f6a7b8",
+        "name": "Create Data",
+        "func": "msg.payload = [\n    { name: \"Alice\", age: 30, location: \"Pune\" },\n    { name: \"Bob\", age: 25, location: \"Mumbai\" },\n    { name: \"Charlie\", age: 35, location: \"Delhi\" }\n];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "ddc8c0a74202df30"
+            ]
+        ]
+    },
+    {
+        "id": "ddc8c0a74202df30",
+        "type": "ui_template",
+        "z": "f1a2c3d4e5f6a7b8",
+        "group": "63c9e83fba7be730",
+        "name": "DataTable View",
+        "order": 0,
+        "width": "12",
+        "height": "8",
+        "format": "<link rel=\"stylesheet\" href=\"https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css\">\n<script src=\"https://code.jquery.com/jquery-3.7.0.min.js\"></script>\n<script src=\"https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js\"></script>\n\n<table id=\"myTable\" class=\"display\" style=\"width:100%\">\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Age</th>\n      <th>Location</th>\n    </tr>\n  </thead>\n  <tbody>\n  </tbody>\n</table>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (!data || !Array.isArray(data)) return;\n\n        let tbody = '';\n        data.forEach(row => {\n            tbody += `<tr><td>${row.name}</td><td>${row.age}</td><td>${row.location}</td></tr>`;\n        });\n        $('#myTable tbody').html(tbody);\n\n        if (!$.fn.DataTable.isDataTable('#myTable')) {\n            $('#myTable').DataTable();  // Initialize once\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8550a176364114e3",
+        "type": "s7 in",
+        "z": "77b8f05fc0c712f8",
+        "endpoint": "s7plc",
+        "mode": "all",
+        "variable": "01",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "784091927262c47e"
+            ]
+        ]
+    },
+    {
+        "id": "784091927262c47e",
+        "type": "function",
+        "z": "77b8f05fc0c712f8",
+        "name": "function 2",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    let currentDate = now.getFullYear() + '-' +\n        String(now.getMonth() + 1).padStart(2, '0') + '-' +\n        String(now.getDate()).padStart(2, '0') + ' ' +\n        String(now.getHours()).padStart(2, '0') + ':' +\n        String(now.getMinutes()).padStart(2, '0') + ':' +\n        String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: currentDate }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "120",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "3e053b2c09523811"
+            ]
+        ]
+    },
+    {
+        "id": "3e053b2c09523811",
+        "type": "MSSQL",
+        "z": "77b8f05fc0c712f8",
+        "mssqlCN": "78afed567ef169d7",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "e754287c373e329f"
+            ]
+        ]
+    },
+    {
+        "id": "d00de496a9062d62",
+        "type": "catch",
+        "z": "77b8f05fc0c712f8",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "d028cbe47d2f6524"
+            ]
+        ]
+    },
+    {
+        "id": "d028cbe47d2f6524",
+        "type": "function",
+        "z": "77b8f05fc0c712f8",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "acc3a7f7277f2523"
+            ]
+        ]
+    },
+    {
+        "id": "acc3a7f7277f2523",
+        "type": "file",
+        "z": "77b8f05fc0c712f8",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\Error.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e754287c373e329f",
+        "type": "debug",
+        "z": "77b8f05fc0c712f8",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "func001",
+        "type": "function",
+        "z": "d56e9038cfc4ecfb",
+        "name": "Filter TRUE tags and prepare SQL",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\n// Build SQL procedure calls\nlet now = new Date();\nlet timestamp = now.toISOString();\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: timestamp }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "sql001"
+            ]
+        ]
+    },
+    {
+        "id": "sql001",
+        "type": "MSSQL",
+        "z": "d56e9038cfc4ecfb",
+        "mssqlCN": "c51548e2cfc4b964",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 900,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3d09e36a6407f9b",
+        "type": "s7 in",
+        "z": "d56e9038cfc4ecfb",
+        "endpoint": "cab73a55475e776c",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "func001"
+            ]
+        ]
+    },
+    {
+        "id": "a307dca4be505910",
+        "type": "catch",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "0b61a2f5e1089f4a"
+            ]
+        ]
+    },
+    {
+        "id": "0b61a2f5e1089f4a",
+        "type": "function",
+        "z": "d56e9038cfc4ecfb",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "7a9451015cbe1bab"
+            ]
+        ]
+    },
+    {
+        "id": "7a9451015cbe1bab",
+        "type": "file",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 780,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
