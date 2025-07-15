@@ -1447,5 +1447,21 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "d6b05aa6204b65a9",
+        "type": "debug",
+        "z": "2c3ed0a1347e6eea",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 140,
+        "wires": []
     }
 ]
