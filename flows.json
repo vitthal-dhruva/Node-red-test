@@ -39,14 +39,6 @@
         "env": []
     },
     {
-        "id": "36c16aee50642a72",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "fed8110cd3127186",
         "type": "MSSQL-CN",
         "z": "f9847971b187432a",
@@ -868,26 +860,6 @@
         ]
     },
     {
-        "id": "cba32aadfb475f4d",
-        "type": "MSSQL-CN",
-        "z": "36c16aee50642a72",
-        "tdsVersion": "7_4",
-        "name": "my connection",
-        "server": "DESKTOP-EPRNPCE",
-        "port": "1433",
-        "encyption": true,
-        "trustServerCertificate": true,
-        "database": "Practise",
-        "useUTC": true,
-        "connectTimeout": "15000",
-        "requestTimeout": "15000",
-        "cancelTimeout": "5000",
-        "pool": "5",
-        "parseJSON": true,
-        "enableArithAbort": true,
-        "readOnlyIntent": false
-    },
-    {
         "id": "ac9a6eddc6c1adc3",
         "type": "function",
         "z": "f9847971b187432a",
@@ -1467,146 +1439,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "e4a1b31e8026dcf0",
-        "type": "function",
-        "z": "36c16aee50642a72",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 240,
-        "wires": [
-            [
-                "3b30d3870c647071"
-            ]
-        ]
-    },
-    {
-        "id": "ce0d2b5ce8c9e0f6",
-        "type": "inject",
-        "z": "36c16aee50642a72",
-        "name": "Sample S7 Payload",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"STRING\":\"Pump_01\",\"REAL\":23.5,\"DWORD\":12345,\"BOOL\":true}",
-        "payloadType": "json",
-        "x": 210,
-        "y": 140,
-        "wires": [
-            [
-                "35ad0823353dd602"
-            ]
-        ]
-    },
-    {
-        "id": "35ad0823353dd602",
-        "type": "function",
-        "z": "36c16aee50642a72",
-        "name": "Build SP Query",
-        "func": "function formatDate(date) {\n    let year = date.getFullYear();\n    let month = String(date.getMonth() + 1).padStart(2, '0');\n    let day = String(date.getDate()).padStart(2, '0');\n    let hours = String(date.getHours()).padStart(2, '0');\n    let minutes = String(date.getMinutes()).padStart(2, '0');\n    let seconds = String(date.getSeconds()).padStart(2, '0');\n    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n}\n\nlet now = new Date();\nconst currentDate = formatDate(now);\n\nlet values = msg.payload;\n\nmsg.payload = \"InsertS7CommDataa\"; // Stored procedure name\nmsg.queryParams = [\n    { name: \"Name\",  value: values.STRING || \"Unknown\" },\n    { name: \"RealVal\", value: parseFloat(values.REAL) || 0 },\n    { name: \"DWordVal\", value: values.DWORD || 0 },\n    { name: \"BooleanVal\", value: values.BOOL ? 1 : 0 },\n    { name: \"Timestamp\",  value: currentDate }\n];\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 140,
-        "wires": [
-            [
-                "1ad99bd534d35631"
-            ]
-        ]
-    },
-    {
-        "id": "1ad99bd534d35631",
-        "type": "MSSQL",
-        "z": "36c16aee50642a72",
-        "mssqlCN": "cba32aadfb475f4d",
-        "name": "MSSQL",
-        "outField": "payload",
-        "returnType": "0",
-        "throwErrors": "1",
-        "query": "",
-        "modeOpt": "",
-        "modeOptType": "execute",
-        "queryOpt": "payload",
-        "queryOptType": "msg",
-        "paramsOpt": "queryParams",
-        "paramsOptType": "msg",
-        "rows": "rows",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 600,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3b30d3870c647071",
-        "type": "file",
-        "z": "36c16aee50642a72",
-        "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\Error.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 590,
-        "y": 240,
-        "wires": [
-            [
-                "c938d219656f78bd"
-            ]
-        ]
-    },
-    {
-        "id": "e0eafafe10b1ae6d",
-        "type": "catch",
-        "z": "36c16aee50642a72",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 100,
-        "y": 240,
-        "wires": [
-            [
-                "e4a1b31e8026dcf0"
-            ]
-        ]
-    },
-    {
-        "id": "c938d219656f78bd",
-        "type": "debug",
-        "z": "36c16aee50642a72",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 240,
-        "wires": []
     }
 ]
